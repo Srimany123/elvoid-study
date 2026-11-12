@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gate to GPT · Study Atlas</title>
+<meta name="description" content="A weighted study atlas from hardware to frontier AI: routes, prerequisites, points and recommendations.">
+<meta name="theme-color" content="#f4f1e9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#11141a" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231b2230'/%3E%3Cpath d='M7 22 L13 10 L19 18 L25 8' stroke='%23e8582a' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='7' cy='22' r='2.6' fill='%23f4f1e9'/%3E%3Ccircle cx='25' cy='8' r='2.6' fill='%23f4f1e9'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800&family=Overpass+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="style.css?v=__V__">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#/today" aria-label="Gate to GPT home">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 24 L12 11 L19 19 L27 7" /><circle cx="5" cy="24" r="3"/><circle cx="27" cy="7" r="3"/></svg>
+    <span><b>Gate to GPT</b><small>study atlas</small></span>
+  </a>
+  <nav class="tabs" aria-label="Sections">
+    <a href="#/today" data-view="today">Today</a>
+    <a href="#/route" data-view="route">Route</a>
+    <a href="#/atlas" data-view="atlas">Atlas</a>
+    <a href="#/combo" data-view="combo">Combo</a>
+    <a href="#/web" data-view="web">Web</a>
+    <a href="#/formulas" data-view="formulas">Formulas</a>
+    <a href="#/wiki" data-view="wiki">Reader</a>
+    <a href="#/rules" data-view="rules">Rules</a>
+  </nav>
+  <div class="meta">
+    <a class="pts" href="#/rules" id="ptsChip" title="Points and level"></a>
+    <button class="sync" id="syncBtn" type="button" title="Save &amp; load progress"><i></i><span>Save &amp; load</span></button>
+  </div>
+</header>
+
+<main id="app" tabindex="-1"></main>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<dialog id="saveDlg" aria-labelledby="saveTitle">
+  <div class="dlg">
+    <h3 id="saveTitle">Save &amp; load progress</h3>
+    <div id="saveBody" class="dlg"></div>
+  </div>
+</dialog>
+
+<script src="vendor/d3.min.js?v=7.8.5"></script>
+<script src="data/curriculum.js?v=__V__"></script>
+<script src="data/concepts.js?v=__V__"></script>
+<script src="data/meta.js?v=__V__"></script>
+<script src="data/formulas.js?v=__V__"></script>
+<script src="data/themes.js?v=__V__"></script>
+<script src="data/depth.js?v=__V__"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="engine.js?v=__V__"></script>
+<script src="graph.js?v=__V__"></script>
+<script src="app.js?v=__V__"></script>
+</body>
+</html>
